@@ -112,7 +112,7 @@ public:
     }
 
     bool canBoop() const override {
-        return true;
+        return false;
     }
 
     char getSymbol() const override {
@@ -194,7 +194,7 @@ public:
             int adjCol = pos.second;
             Piece* piece = getPiece(adjRow, adjCol);
             
-            if (piece && piece->canBoop() && placedPiece->weight() >= piece->weight()) {
+            if (piece && piece->canBoop()) {
                 int dr = adjRow - placedRow;
                 int dc = adjCol - placedCol;
                 int newRow = adjRow + dr;
@@ -470,8 +470,8 @@ public:
     }
 };
 
-int main() {
-    Boop game;
-    game.play();
-    return 0;
-}
+//int main() {
+//    Boop game;
+//    game.play();
+//    return 0;
+//}
