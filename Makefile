@@ -2,7 +2,7 @@ CXX := g++
 CXXFLAGS := -std=c++17 -Iinclude -Isrc -O2 -Wall -Wextra
 BINDIR := bin
 SRCDIR := src
-OBJDIR := build/obj
+OBJDIR := build
 
 # Encuentra todos los archivos .cpp en src/
 SRC := $(wildcard $(SRCDIR)/*.cpp)
