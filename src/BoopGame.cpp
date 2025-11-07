@@ -1,6 +1,6 @@
 #include "BoopGame.h"
 
-// Inicialización de la instancia estática del singleton
+// Inicialización de instancia estática del singleton
 Boop *Boop::instance = nullptr;
 
 // Implementación de getInstance
